@@ -8,6 +8,9 @@
   {name: "Tacos", level: "mostly"},
   {name: "Cottage Cheese", level: "not very"}
 ];
+foods.forEach(function(food){
+  console.log(food.name, "is", food.level, "delecious");
+});
 
 // your code here
 

@@ -5,4 +5,7 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 // ['My', 'Very', 'Excellent', 'Mother', 'Just', 'Sent', 'Me', 'Nine', 'Pizzas']
 
 // Your code here!
-
+var dim2 = mneumonics.map(function (word) {
+    return word.split(" ");
+})
+console.log(dim2);

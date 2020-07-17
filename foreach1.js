@@ -6,6 +6,12 @@
 // > "I like tacos"
 // > "I like ice cream"
  
-var foods = ["pizza", "tacos", "ice cream", "sushi"];
+var foods = ["pizza", "tacos", "ice cream Ltn. Dan", "sushi"];
 
 // your code here
+
+console.log(foods);
+
+foods.forEach(function(food){
+    console.log('I like me some ' + food)
+})

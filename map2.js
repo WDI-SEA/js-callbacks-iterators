@@ -34,7 +34,6 @@ var phoneBook = [
 
 const countryCodeNumbers = phoneBook.map(element => {
   let currentKey = Object.keys(element);
-  let currentNumber = Object.values(element);
   let addNumber = element[currentKey].charAt(1);
 
   element[currentKey] = addNumber + '-' + element[currentKey]
@@ -42,3 +41,19 @@ const countryCodeNumbers = phoneBook.map(element => {
   return element
 });
 console.log(countryCodeNumbers);
+
+
+
+// attempt at "other way"
+
+// let countryCodeNumbers = phoneBook.map(element => {
+//   let currentKey = Object.keys(element);
+//   let currentNumber = Object.values(element);
+//   let addNumber = currentNumber.charAt(0);
+
+//   currentNumber = addNumber + '-' + currentNumber;
+//   element = {currentKey: currentNumber};
+
+//   return element
+// });
+// console.log(countryCodeNumbers);

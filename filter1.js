@@ -24,3 +24,10 @@ var isCool = function(person) {
 }
 
 // Your code goes here
+
+const coolPeople = people.filter(eachPerson => {
+	let whosCool = isCool(eachPerson);
+
+	if (whosCool) {
+		return eachPerson;
+	});

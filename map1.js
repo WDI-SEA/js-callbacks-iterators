@@ -6,3 +6,9 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
+const result = mneumonics.map(sayings => {
+    let splitSayings = sayings.split(" ");
+    return splitSayings;
+})
+
+console.log(result);

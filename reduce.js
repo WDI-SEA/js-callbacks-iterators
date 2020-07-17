@@ -8,3 +8,17 @@ var numbers = [1, 56, 2, 4, 1, 99, 3, 5];
 // via multiplication
 
 
+function getProduct(total, num) {
+    return total * num;
+}    
+console.log(getProduct);
+
+
+
+//correct answer:
+
+let multiply = function(total, number) {
+    return total * number;
+}
+let multiplication = numbers.reduce(multiply);
+console.log(multiplication);

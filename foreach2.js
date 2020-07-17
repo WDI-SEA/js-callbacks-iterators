@@ -12,3 +12,7 @@
 
 // your code here
 
+foods.forEach(element=>{
+  for(i=0; i<foods.length;i++)
+  console.log(element.name + " is " + element.level + " delicious")
+})

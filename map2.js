@@ -27,6 +27,19 @@ var phoneBook = [
    {Zed: "111-111-1111"}
   ];
 
+
+  var newPhoneBook = phoneBook.map(object => )
+  
+
+    
+  
+
+  console.log(newPhoneBook);
+
+  //var newPhoneBook = newBook.unshift(1-);
+
+  //console.log(newPhoneBook);
+
 // Take the phonebook above and use map to return a new phonebook that includes a country-code that matches the rest of the phone number.
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 

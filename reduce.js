@@ -8,3 +8,12 @@ var numbers = [1, 56, 2, 4, 1, 99, 3, 5];
 // via multiplication
 
 
+function reduce(arr){
+    let product = 1;
+    arr.forEach(element => {
+        product *= element;
+    })
+    return product;
+}
+
+console.log(reduce(numbers));

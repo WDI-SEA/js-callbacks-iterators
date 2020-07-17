@@ -6,3 +6,8 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
+const twoDimention = mneumonics.map(element => {
+    return element.split(" ");
+})
+
+console.log(twoDimention);

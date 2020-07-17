@@ -14,3 +14,7 @@
 foods.forEach(function(food){
   console.log(food.name + " is " + food.level + " delicios");
 })
+
+// foods.forEach(food =>{
+//   console.log(food.name + ' is ' + food.level + ' delicios');
+// })

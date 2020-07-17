@@ -31,3 +31,15 @@ var filterPerson = people.filter(function(people){
 })
 
 console.log(filterPerson)
+
+// const coolPeople = people.filter(eachPerson => {
+// 	console.log(eachPerson);
+// 	console.log(eachPerson.coolnessScore);
+
+// 	let areTheyCool = isCool(eachPerson);
+	
+// 	if (areTheyCool){
+// 		return eachPerson;
+// 	}
+// })
+// console.log(coolPeople)

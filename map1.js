@@ -6,11 +6,17 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
-function splitWords(words){
-    return words.split(" ")
-  }
+// function splitWords(words){
+//     return words.split(" ")
+//   }
   
-  var newArray = mneumonics.map(splitWords);
+//   var newArray = mneumonics.map(splitWords);
   
-  console.log(newArray)
+//   console.log(newArray)
 
+const result = mneumonics.map(sentence => {
+  let splitSentece = sentence.split(" ");
+
+  return splitSentece;
+})
+console.log(result);

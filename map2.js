@@ -32,10 +32,23 @@ var phoneBook = [
 
 //Your code here
 
-var newPhoneBook = phoneBook.map(element => {
-  var phoneBookName = Object.keys(element) 
-  var countryCode = element[phoneBookName].charAt(0); //index[0]as country code
-  return phoneBookName + ": " + countryCode + "-" + element[phoneBookName];
-})
+// var newPhoneBook = phoneBook.map(element => {
+//   var phoneBookName = Object.keys(element) 
+//   var countryCode = element[phoneBookName].charAt(0); //index[0]as country code
+//   return phoneBookName + ": " + countryCode + "-" + element[phoneBookName];
+// })
 
-console.log(newPhoneBook);
+// console.log(newPhoneBook);
+
+
+const resultTwo = phoneBook.map(contact => {
+  let person = Object.keys(contact)[0];
+  let number = contact[person];
+  let firstDigit = number[0];
+  let numberWithCode = firstDigit + '-' + number;
+  contact[person] = numberWithCode;
+  return contact;
+});
+console.log(resultTwo);
+
+// break down one-by-one

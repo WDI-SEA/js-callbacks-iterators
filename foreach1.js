@@ -9,9 +9,13 @@
 var foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
-foods.forEach(function(food){
-    if (food !== "sushi"){
-      console.log("I like " + food)
+// foods.forEach(function(food){
+//     if (food !== "sushi"){
+//       console.log("I like " + food)
   
-    }
-  })
+//     }
+//   })
+foods.pop();
+  foods.forEach(food =>{
+    console.log('I like' + food);
+  });

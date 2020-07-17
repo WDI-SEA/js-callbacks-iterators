@@ -6,3 +6,8 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
+let meme = mneumonics.map((arr) => arr.split(' '));
+console.log(meme);
+
+
+

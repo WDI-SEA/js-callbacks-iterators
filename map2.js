@@ -27,22 +27,35 @@ var phoneBook = [
    {Zed: "111-111-1111"}
   ];
 
-// Take the phonebook above and use map to return a new phonebook that includes a country-code that matches the rest of the phone number.
+// Take the phonebook above and use map to return a new phonebook that includes a country-code that matches the
+// rest of the phone number.
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
-phoneBook.map(e => {
- if (e.keys === "111-111-1111") {
-  console.log(e);
- } else if (e.keys === "222-222-2222") {
-  console.log(e);
- } else if (e.keys === "333-333-3333") {
-  console.log(e);
- } else if (e.keys === "444-444-4444") {
-  console.log(e);
- } else if (e.keys === "555-555-5555") {
-  console.log(e);
- } else {
-  console.log("oops");
- }
+let newBook = phoneBook.map(e => {
+ const newPerson = {};
+ Object.keys(e).forEach(key =>{
+  const phoneNumber = e[key];
+  newPerson[key] = `${phoneNumber[0]}-${phoneNumber}`;
+ });
+ return newPerson;
 });
+
+console.log(newBook);
+
+// const myUsers = [
+//  { name: 'shark', likes: 'ocean' },
+//  { name: 'turtle', likes: 'pond' },
+//  { name: 'otter', likes: 'fish biscuits' }
+// ]
+//
+// const usersByLikes = myUsers.map(item => {
+//  const container = {};
+//
+//  container[item.name] = item.likes;
+//  container.age = item.name.length * 10;
+//
+//  return container;
+// })
+//
+// console.log(usersByLikes);

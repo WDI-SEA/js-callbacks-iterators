@@ -14,8 +14,3 @@ let here =mneumonics.map(e => {
 
 console.log(here);
 
-// map returns array of changes made to each element
-// const numbas = [12, 4, 121, 3435, 3];
-// const addFive = numbas.map(e => {
-//   return e + 5;
-// });

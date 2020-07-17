@@ -7,9 +7,11 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 // Your code here!
 
 
-var arrayLength = mneumonics.map(element =>{
-    return element + mneumonics.spilt
+const result = mneumonics.map(sentence =>{
+    let splitSentence = sentence.split(" ");
     
 
+    return splitSentence;
 });
-console.log(arrayLength);
+
+console.log(result);

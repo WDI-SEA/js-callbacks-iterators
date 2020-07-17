@@ -25,11 +25,27 @@ var isCool = function(person) {
 
 // Your code goes here
 
-const result = isCool(people =>{
+// const result = isCool(people =>{
 
-	if (coolnessScore.length > 20){
-		return people
+// 	if (coolnessScore.length > 20){
+// 		return people
+// 	}
+// });
+	
+// console.log(result);
+
+
+
+
+
+// 
+
+const coolPeople = people.filter(eachPerson =>{
+	
+
+	if (isCool(eachPerson)){
+		return eachPerson;
+
+
 	}
 });
-	
-console.log(result);

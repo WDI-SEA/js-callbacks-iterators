@@ -14,3 +14,12 @@ const multiplier = (accumulator, currentValue) => accumulator * currentValue;
 
 
 console.log(numbers.reduce(multiplier));
+
+
+//rome solution
+
+let multiply = function(total, number) {
+    return total * number;
+}
+let multiplication = numbers.reduce(multiply);
+console.log(multiplication);

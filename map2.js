@@ -27,6 +27,17 @@ var phoneBook = [
    {Zed: "111-111-1111"}
   ];
 
+function addCountryCode (array){
+  //create formula that takes the value in an array and changes the string to be x- where x is equal to the previous value.
+  let  array.Value
+}
+  var newCode = phoneBook.map(addCountryCode);
+  console.log(newCode);
+
+
+
+
+
 // Take the phonebook above and use map to return a new phonebook that includes a country-code that matches the rest of the phone number.
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 

@@ -33,7 +33,7 @@ var phoneBook = [
 //Your code here
 
 var newPhoneBook = phoneBook.map(element => {
-  var phoneBookName = Object.keys(element) // name appear
+  var phoneBookName = Object.keys(element) 
   var countryCode = element[phoneBookName].charAt(0); //index[0]as country code
   return phoneBookName + ": " + countryCode + "-" + element[phoneBookName];
 })

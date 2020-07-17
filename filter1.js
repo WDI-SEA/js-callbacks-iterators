@@ -24,7 +24,14 @@ var isCool = function(person) {
 }
 
 // Your code goes here
-let coolPeople = people.filter(function(isCool) {
-		return people.name;
+let coolPeople = people.filter(function(earchPerson) {
+	console.log(eachPerson);
+	console.log(eachPerson.coolnessScore);
+
+	let areTheyCool = isCool(eachPerson);
+
+	if (areTheyCool) {
+		return eachPerson.name;
+	}
 });
-console.log(people);
+console.log(coolPeople);

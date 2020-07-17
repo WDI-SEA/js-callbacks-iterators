@@ -32,6 +32,14 @@ var phoneBook = [
 
 //Your code here
 let numbers = phoneBook.map(function (element) {
-  return element.unshift("1-");
+  let person = Object.keys(element); 
+  let number = element[person];
+  let firstDigit = number[0];
+  let numberWithCode = firstDigit + "-" + number;
+  
+  contact[person] = numberWithCode;
+
+  console.log(element);
+  return element;
 });
 console.log(numbers);

@@ -31,3 +31,11 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+
+var newPhoneBook = phoneBook.map(element => {
+  var phoneBookName = Object.keys(element) // name appear
+  var countryCode = element[phoneBookName].charAt(0); //index[0]as country code
+  return phoneBookName + ": " + countryCode + "-" + element[phoneBookName];
+})
+
+console.log(newPhoneBook);

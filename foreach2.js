@@ -11,4 +11,6 @@
 ];
 
 // your code here
-
+foods.forEach(function(element){
+  console.log(element.name + " is " + element.level + " delicious");
+});

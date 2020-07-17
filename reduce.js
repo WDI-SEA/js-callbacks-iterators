@@ -8,3 +8,14 @@ var numbers = [1, 56, 2, 4, 1, 99, 3, 5];
 // via multiplication
 
 
+
+function reduce(array){
+     
+    let total = 1;
+    array.forEach(e => {
+        total*= e;
+    })
+      return total;
+}
+
+    console.log(reduce(numbers));

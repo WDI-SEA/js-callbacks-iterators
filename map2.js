@@ -31,3 +31,22 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+
+//I partnered with a classmate and neither of us could figure out how
+//to get the name to print. I left the code that does function
+//but it is not a complete answer.
+
+
+          
+const addCountryCode = phoneBook.map(e=> {
+  var person = Object.keys(e)[0];
+   var number = Object.values(e)[0];
+  
+   var countryCode = number[0];
+   var newNumber = countryCode + "-" + number;
+  
+  
+  return {person:newNumber};
+})
+
+       console.log(addCountryCode);

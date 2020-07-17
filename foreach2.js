@@ -12,3 +12,13 @@
 
 // your code here
 
+//I wanted to use something I
+//found that we had not covered, 
+//so I am citing the website here
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+
+foods.forEach(foodLevel =>{
+  
+     console.log(`${foodLevel.name} is ${foodLevel.level} delicious`);
+
+    })

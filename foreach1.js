@@ -1,5 +1,6 @@
 
-// (1) Use the .forEach iterator to loop over the following array of foods and say you like them.
+// (1) Use the .forEach iterator to loop over the following 
+//array of foods and say you like them.
 
 // The output should be
 // > "I like pizza"
@@ -9,3 +10,8 @@
 var foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
+
+foods.forEach(meal => {
+  
+   console.log("I like " + meal);
+}) 

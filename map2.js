@@ -31,3 +31,14 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+const countryCoded = phoneBook.map(element => {
+  let properties = Object.keys(element);
+  let number = element[properties[0]];
+  let code = number[0];
+
+  let codedNum = code + "-" + number;
+
+  return codedNum;
+})
+
+console.log(countryCoded);

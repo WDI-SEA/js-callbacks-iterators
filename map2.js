@@ -35,7 +35,16 @@ var phoneBook = [
 let phoney = phoneBook.map(nums => {
   let ma = Object.keys(nums);
   let pa = nums[ma].charAt(0);
-  return nums[ma] = pa + '-' + nums[ma]
+  return ma = ma + ': ' + pa + '-' + nums[ma]
 
 });
 console.log(phoney);
+
+
+// let phoney = phoneBook.map(nums => {
+//   let ma = Object.keys(nums);
+//   let pa = nums[ma].charAt(0);
+//   return nums[ma] = pa + '-' + nums[ma]
+
+// });
+// console.log(phoney);

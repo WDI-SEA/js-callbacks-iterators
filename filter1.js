@@ -1,4 +1,4 @@
-var people = [
+let people = [
 	{
 		name: "Bob",
 		coolnessScore: 23
@@ -19,8 +19,14 @@ var people = [
 
 // (1) Write code that uses the filter function, and the below isCool function to return a list of people who are cool.
 
-var isCool = function(person) {
+let isCool = function(person) {
 	return person.coolnessScore > 20;
 }
+
+
+let coolPeeps = people.filter(isCool);
+console.log(coolPeeps);
+// console.log(coolPeeps)
+
 
 // Your code goes here

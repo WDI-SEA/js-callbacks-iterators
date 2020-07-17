@@ -6,6 +6,13 @@
 // > "I like tacos"
 // > "I like ice cream"
  
-var foods = ["pizza", "tacos", "ice cream", "sushi"];
+let foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
+
+
+foods.forEach(food => {
+    if (food !== 'sushi') {
+        console.log('I like '+ food);
+    }
+})

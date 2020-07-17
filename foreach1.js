@@ -9,3 +9,8 @@
 var foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
+foods.forEach( element =>{
+    if( element != "sushi" )
+    
+    console.log("i like " + element) 
+});

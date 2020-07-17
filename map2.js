@@ -33,6 +33,15 @@ var phoneBook = [
 
 //Your code here
 
-const strArray =  mneumonics.map(element => element === 111-111-1111);
+let newPhoneBook = phoneBook.map(element => {
+  let phoneBookObject = Object.keys(element);
+  // console.log(phoneBookObject)
+  let countryCode = element[phoneBookObject].charAt(0);
 
-console.log(strArray);
+  var result = (phoneBookObject + ': "' +countryCode + '-' + element[phoneBookObject]+ '');
+  // console.log(result);
+  return result;
+
+});
+
+console.log(newPhoneBook);

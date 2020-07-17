@@ -6,3 +6,10 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
+var res = mneumonics.split(' ', ' ');
+
+//or this, I am not too sure
+mneumonics.map(function(split){
+
+});
+console.log(' ', ' ');

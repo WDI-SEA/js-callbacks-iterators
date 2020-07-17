@@ -9,4 +9,4 @@ var filteredtext = misc.filter(element => {
         return element;
     }
 });
-console.log(filteredtext)
+console.log(filteredtext);

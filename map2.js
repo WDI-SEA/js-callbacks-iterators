@@ -31,3 +31,29 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+
+
+
+//  var newPhoneBook = phoneBook.forEach(element => {
+//   element.split("");
+// })
+
+let newPhone = phoneBook.map(element => {
+  let PBObject = Object.keys(element);
+  let countryCode = element[PBObject].charAt(0);
+  return PBObject + ": " + countryCode + "-" + element[PBObject];
+  
+  
+})
+
+console.log(newPhone);
+
+// var names = Object.keys(element);
+
+
+// names.map(element => {
+//   element = name.charAt();
+// })
+
+// console.log(Object.keys(names));
+

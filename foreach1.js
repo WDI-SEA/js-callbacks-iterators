@@ -9,3 +9,14 @@
 var foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
+let sentence = 'I like ';
+
+foods.forEach(element => {
+    if (element !== "sushi"){
+        console.log(sentence + (element))
+    }
+})
+
+
+
+

@@ -16,7 +16,7 @@ var people = [
 		coolnessScore: 17
 	}
 ];
-
+// make a change
 // (1) Write code that uses the filter function, and the below isCool function to return a list of people who are cool.
 
 var isCool = function(person) {

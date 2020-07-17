@@ -12,4 +12,8 @@
 ];
 
 // your code here
-
+var food = foods.name;
+var intensity = foods.level;
+foods.forEach(function(yum) {
+  console.log(food + " is " + intensity + " delicious!");
+});

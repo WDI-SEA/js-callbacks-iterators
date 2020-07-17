@@ -24,3 +24,5 @@ var isCool = function(person) {
 }
 
 // Your code goes here
+var coolPeopleOver20 = people.filter(isCool);
+console.log(coolPeopleOver20);

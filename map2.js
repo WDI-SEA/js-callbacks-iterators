@@ -31,3 +31,7 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+var numbers = phoneBook.map(function(elem) {
+  return elem.toString();
+});
+console.log(numbers);

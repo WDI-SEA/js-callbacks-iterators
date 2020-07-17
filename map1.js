@@ -5,4 +5,7 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 // ['My', 'Very', 'Excellent', 'Mother', 'Just', 'Sent', 'Me', 'Nine', 'Pizzas']
 
 // Your code here!
-
+var separate = mneumonics.map(function (sentences) {
+    return sentences.split(" ");
+});
+console.log(separate);

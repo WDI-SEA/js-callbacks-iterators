@@ -42,3 +42,4 @@ let newPhoneBook = phoneBook.map (element => {
 });
 
 console.log(newPhoneBook);
+console.log(phoneBook);

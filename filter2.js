@@ -6,7 +6,7 @@ var misc = [3, "true", {a: 1, b: 2}, 7, [1, 2, 3], ['a', 'b', 'c'], "my favorite
 
 // Your code goes here
 
-var result = misc.filter(element => typeof element === "string"); 
+var result4 = misc.filter(element => typeof element === "string"); 
 
 
-console.log(result);
+console.log(result4);

@@ -15,3 +15,9 @@
 foods.forEach( function(element) {
   console.log( element.name+' is '+ element.level + ' delicious');
 });
+
+// rome solution
+
+// foods.forEach( ecahFood => {
+//   console.log( element.name+' is '+ element.level + ' delicious');
+// });

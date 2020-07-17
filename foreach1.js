@@ -13,3 +13,9 @@ var foods = ["pizza", "tacos", "ice cream", "sushi"];
 foods.forEach( function(element) {
     console.log('I like '+ element);
 });
+
+// rome solution
+
+foods.forEach(eachFood => {
+    console.log('I like '+ eachFood);
+})

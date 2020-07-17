@@ -33,15 +33,35 @@ var phoneBook = [
 
 //Your code here
 
-let newPhoneBook = phoneBook.map(element => {
-  let phoneBookObject = Object.keys(element);
-  // console.log(phoneBookObject)
-  let countryCode = element[phoneBookObject].charAt(0);
+const newPhoneBook = phoneBook.map(element => {
+  // console.log(newPhoneBook);
+  let phoneBookObject = Object.keys(element)[0];
+  // console.log(phoneBookObject);
 
-  var result = (phoneBookObject + ': "' +countryCode + '-' + element[phoneBookObject]+ '');
+  let number = element[phoneBookObject];
+
+  let countryCode = number[0];
+
+  var result5 = (phoneBookObject + ': "' +countryCode + '-' + element[phoneBookObject]+ '');
   // console.log(result);
-  return result;
+
+  element[phoneBookObject] = result5 ;
+
+  return element;
 
 });
 
 console.log(newPhoneBook);
+
+
+// rome solution 
+
+// const resultTwo = phoneBook.map(contact => {
+//   let person = Object.keys(contact)[0];
+//   let number = contact[person];
+//   let firstDigit = number[0];
+//   let numberWithCode = firstDigit + '-' + number;
+//   contact[person] = numberWithCode;
+//   return contact;
+// });
+// console.log(resultTwo);

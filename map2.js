@@ -33,12 +33,16 @@ var phoneBook = [
 //Your code here
 const countryCoded = phoneBook.map(element => {
   let properties = Object.keys(element);
+  //let properties = Object.keys(element)[0];
   let number = element[properties[0]];
+  //let number = element[properties];
   let code = number[0];
 
   let codedNum = code + "-" + number;
 
-  return codedNum;
+  element[properties[0]] = codedNum;
+
+  return element;
 })
 
 console.log(countryCoded);

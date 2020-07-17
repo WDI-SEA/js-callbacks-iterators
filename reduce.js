@@ -8,3 +8,10 @@ var numbers = [1, 56, 2, 4, 1, 99, 3, 5];
 // via multiplication
 
 
+var multiply = function (product, element) {
+    return product * element;   // (1) product= value/total (2) element= array value
+
+};
+
+var final = numbers.reduce(multiply);
+console.log(final);

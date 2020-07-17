@@ -24,3 +24,11 @@ var isCool = function(person) {
 }
 
 // Your code goes here
+
+
+const filterPeople = people.filter(person => {
+	if (person.coolnessScore > 20){
+		return person;
+	}
+}) 
+ console.log(filterPeople);

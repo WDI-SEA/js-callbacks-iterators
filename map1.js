@@ -8,9 +8,11 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas',
 
 // Your code here!
 
-mneumonics.map(e => {
-  console.log(e);
+let here =mneumonics.map(e => {
+  return [e];
 });
+
+console.log(here);
 
 // map returns array of changes made to each element
 // const numbas = [12, 4, 121, 3435, 3];

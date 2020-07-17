@@ -8,4 +8,4 @@ misc.filter(e => {
   if (typeof e !== "string") {
     console.log(e)
   }
-})
+});

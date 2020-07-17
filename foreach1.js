@@ -12,3 +12,13 @@ var foods = ["pizza", "tacos", "ice cream", "sushi"];
 foods.forEach(function(favoritefoods){
     console.log('I like ' + favoritefoods);
 });
+
+// update
+/* food.forEach(eachFood => {
+    console.log('I like ' + eachFood);
+});
+ 
+or
+
+
+food.forEach

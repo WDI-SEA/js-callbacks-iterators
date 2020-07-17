@@ -10,3 +10,18 @@ var filteredtext = misc.filter(element => {
     }
 });
 console.log(filteredtext);
+
+
+/*
+
+const allStrings = misc.filter(element => {
+    console.log(element);
+
+    if (typeof element === 'string'){
+        return element;
+    }
+});
+console.log(allStrings);
+*/
+
+/*

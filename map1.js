@@ -13,3 +13,14 @@ mneumonics.map(function(split){
 
 });
 console.log(' ', ' ');
+
+//Solution
+
+/* 
+const results = mneumonics.map(sentence => {
+    let splitSentence = sentence.split(' ');
+
+    return splitSentence;
+});
+ 
+console.log(results)

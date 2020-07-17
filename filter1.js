@@ -25,3 +25,13 @@ var coolpeople = people.filter(function(e) {
 	return e.coolnessScore > 20;
 });
 console.log(coolpeople);
+
+/* Solution 
+
+const coolPeople = people.filter(eachPerson => {
+let aretheyCool = isCool(eachPerson);
+
+if(aretheyCool) {
+	returm eachPerson.name;
+}
+});

@@ -15,3 +15,10 @@
 foods.forEach(function (food, level) {
   console.log(food, + 'is ', + level, + 'delicious')
 });
+
+// solution
+
+/* foods.forEach(eachFood => {
+  console.log(eachFood.name + ' is ' + eachFood.level + ' delicious');
+}); 
+*/

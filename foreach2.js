@@ -12,3 +12,12 @@
 
 // your code here
 
+foods.forEach(foodsILike);
+
+
+function foodsILike(food){
+
+  console.log(food.name + " is " + food.level + " delicious")
+ 
+ 
+}

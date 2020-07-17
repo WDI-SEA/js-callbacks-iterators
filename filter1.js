@@ -24,3 +24,12 @@ var isCool = function(person) {
 }
 
 // Your code goes here
+
+const result = isCool(people =>{
+
+	if (coolnessScore.length > 20){
+		return people
+	}
+});
+	
+console.log(result);

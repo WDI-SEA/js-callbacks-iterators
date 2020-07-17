@@ -6,3 +6,10 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
+
+var arrayLength = mneumonics.map(element =>{
+    return element + mneumonics.spilt
+    
+
+});
+console.log(arrayLength);

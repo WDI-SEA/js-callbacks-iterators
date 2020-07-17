@@ -6,3 +6,8 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
+var mneun = mneumonics.map (str => {
+    return str.split(" ");
+  })
+  console.log(mneun);
+  

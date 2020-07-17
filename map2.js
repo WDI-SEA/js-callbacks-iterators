@@ -24,10 +24,21 @@ var phoneBook = [
    {Wil: "333-333-3333"},
    {Xiu: "444-444-4444"},
    {Yam: "555-555-5555"},
-   {Zed: "111-111-1111"}
+   {Zed: "111-111-1111"} //key value pair retrieve each key and add a value 
   ];
 
 // Take the phonebook above and use map to return a new phonebook that includes a country-code that matches the rest of the phone number.
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+
+
+let newPhoneBook = phoneBook.map (element => {
+  let phoneBookObject = Object.keys(element)
+  
+  let countryCode = element[phoneBookObject].charAt(0);
+
+  return  phoneBookObject + ": " + countryCode + "-" + element[phoneBookObject];
+});
+
+console.log(newPhoneBook);

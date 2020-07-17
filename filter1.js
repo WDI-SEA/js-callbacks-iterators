@@ -24,3 +24,11 @@ var isCool = function(person) {
 }
 
 // Your code goes here
+const coolPeople = people.filter(element => {
+	if (isCool)
+	{
+		return element.name;
+	}
+});
+
+console.log(coolPeople);

@@ -5,7 +5,14 @@
 // > "I like pizza"
 // > "I like tacos"
 // > "I like ice cream"
- 
+
 var foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
+
+foods.forEach(function (element) {
+  if (element != "sushi") {
+    console.log("I like " + element);
+  }
+
+});

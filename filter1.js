@@ -21,6 +21,11 @@ var people = [
 
 var isCool = function(person) {
 	return person.coolnessScore > 20;
-}
+};
+
+
 
 // Your code goes here
+let coolKids = people.filter(isCool);
+
+console.log(coolKids)

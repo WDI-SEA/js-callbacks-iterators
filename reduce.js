@@ -8,3 +8,5 @@ var numbers = [1, 56, 2, 4, 1, 99, 3, 5];
 // via multiplication
 
 
+let numnum = numbers.reduce((acc, val)=> acc * val);
+console.log(numnum);

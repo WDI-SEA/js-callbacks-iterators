@@ -10,7 +10,7 @@ var foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
 
-let iLike = foods.forEach(element => {
+foods.forEach(element => {
     if (element != "sushi") {
         console.log('I like ' + element);
     }

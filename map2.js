@@ -31,3 +31,28 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+
+function addCode(array1) {
+
+    var name1 = Object.keys(array1)[0];
+    var numb1 = Object.values(array1)[0];
+
+    var areaCode = numb1[0];
+    var newNumb1 = areaCode + "-" + numb1;
+    var name2 = +name1;
+
+    return {name2:newNumb1};
+ }
+
+var objPhoneBook = phoneBook.map(addCode);
+
+
+
+
+console.log(objPhoneBook);
+
+
+
+//     const numb1 = array1.value[1];
+//     const newPhone = `${num1}-${array1.value}`;
+//     consule.log(newPhone);

@@ -31,3 +31,26 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+
+// BARENT'S NOTE:
+// got pretty damn close on this one. 
+// sent me down an interesting rabbithole. 
+// looking forward to finding out how to do this. 
+
+
+// const values = Object.values(phoneBook[0]);
+// console.log(values);
+
+// phoneBook.values.forEach(function(element) {
+//   console.log(element)
+// });
+// const newPhoneBook = phoneBook.values.map(element => {
+//   return element;
+// });
+
+// console.log(newPhoneBook);
+// const newPhoneBook = phoneBook.map(number => {
+//   return number.keys + '-' + number.value;
+// });
+
+// console.log(newPhoneBook);

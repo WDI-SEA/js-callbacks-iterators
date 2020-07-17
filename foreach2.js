@@ -10,5 +10,9 @@
   {name: "Cottage Cheese", level: "not very"}
 ];
 
+foods.forEach(food =>{
+    console.log(food.name + ' is ' + food.level + ' delicious!');
+  
+})
 // your code here
 

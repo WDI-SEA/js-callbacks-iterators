@@ -9,3 +9,5 @@
 var foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
+
+console.log(foods)

@@ -6,3 +6,11 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 
 // Your code here!
 
+const result = mneumonics.map(sentence => {
+    let spliltSentence = sentence.split(" ");
+    // console.log(spliltSentence);
+
+    return spliltSentence;
+});
+
+console.log(result);

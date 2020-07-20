@@ -25,8 +25,19 @@ var isCool = function(person) {
 
 // Your code goes here
 
-var coolPeople = people.filter(function(people) {
-	return isCool(people);
+// var coolPeople = people.filter(function(people) {
+// 	return isCool(people);
+// });
+
+// console.log(coolPeople);
+
+const coolPeople = people.filter(eachPerson => {
+
+	// let areTheyCool = isCool(eachPerson);
+
+	if (areTheyCool) {
+		return eachPerson.name;
+	} 
 });
 
 console.log(coolPeople);

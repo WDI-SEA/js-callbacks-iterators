@@ -31,3 +31,24 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+
+const resultTwo = phoneBook.map(contact => {
+  // console.log(contact);
+  let person = Object.keys(contact);
+  // console.log(person);
+  let number = contact(person);
+  // console.log(number);
+  let firstDigit = number[0];
+  // console.log(firstDigit);
+  let numberWithCode = firstDigit + '-' + number;
+  // console.log(numberWithCode);
+
+  contact[person] = numberWithCode;
+
+  // console.log(contact);
+
+  return contact;
+
+});
+
+console.log(resultTwo);

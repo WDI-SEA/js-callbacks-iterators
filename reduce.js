@@ -8,9 +8,15 @@ var numbers = [1, 56, 2, 4, 1, 99, 3, 5];
 // via multiplication
 
 
-var multiplication = function (total, newNum) {
-    return total * newNum;
-};
+// var multiplication = function (total, newNum) {
+//     return total * newNum;
+// };
 
-var product = nums.reduce(multiplication);
+// var product = nums.reduce(multiplication);
+// console.log(multiplication);
+
+let multiply = function(total, number) {
+    return total * number;
+}
+let multiplication = numbers.reduce(multiply);
 console.log(multiplication);

@@ -1,0 +1,179 @@
+// ITERATOR DELIVERABLE //
+
+////////////
+// FILTER // 
+////////////
+
+// 1. 
+const people = [
+	{
+		name: "Bob",
+		coolnessScore: 23
+	},
+	{
+		name: "Jen",
+		coolnessScore: 40
+	},
+	{
+		name: "James",
+		coolnessScore: 15.6
+	},
+	{
+		name: "Isolde",
+		coolnessScore: 17
+	}
+];
+
+// (1) Write code that uses the filter function, and the below isCool function to return a list of people who are cool.
+
+// Your code goes here
+
+var isCool = people.filter(function(person){
+  return person.coolnessScore > 20;
+})
+
+console.log('these are the cool kids:',isCool);
+
+
+// 2. 
+
+var misc = [3, 'true', {a: 1, b: 2}, 7, [1, 2, 3], ['a', 'b', 'c'], 'my favorite string', 59.09]
+
+// Use filter to filter all strings out of the above array. 
+// Don't worry about strings in the nested array (misc[5] is considered an array, not a string)
+
+// Your code goes here
+
+
+var noStrings = misc.filter(function(i){
+  var strings = '';
+  return i.misc !== strings;
+})
+
+console.log(noStrings);
+
+// what am i doing wrong? :(
+
+//////////////
+// FOR EACH //
+//////////////
+
+// 1.
+// (1) Use the .forEach iterator to loop over the following array of foods and say you like them.
+
+// The output should be
+// > "I like pizza"
+// > "I like tacos"
+// > "I like ice cream"
+ 
+var snacks = ["pizza", "tacos", "ice cream", "sushi"];
+
+// your code here
+
+
+// cool new way, with the .forEach iterator
+snacks.forEach((yum)=>{
+  console.log('I like '+ yum);
+});
+
+// 2. 
+// Use the .forEach iterator to loop over the following array of objects and say how delicious each one is.
+// The output should be
+// > Pizza is very delicious
+// > Tacos is mostly delicious
+// > Cottage Cheese is not very delicious
+
+ var foods = [
+  {name: "Pizza", level: "very"},
+  {name: "Tacos", level: "mostly"},
+  {name: "Cottage Cheese", level: "not very"}
+];
+
+// your code here
+foods.forEach((foods, compare)=>{
+  console.log(foods.name + ' is ' + foods.level + ' delicious');
+});
+
+/////////
+// MAPS// 
+/////////
+
+// 1. 
+var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please Excuse My Dear Aunt Sally', 'Every Good Boy Does Fine'];
+
+// Write some code using map that takes the above array of mneumonics, and returns a two dimensional array.
+// For example, the 0th element of the new array should be:
+// ['My', 'Very', 'Excellent', 'Mother', 'Just', 'Sent', 'Me', 'Nine', 'Pizzas']
+
+// Your code here!
+
+const twoDim = (phrase) => {
+  return phrase.split(" ") 
+}
+
+const words = mneumonics.map(twoDim);
+console.log(words);
+
+
+// 2.
+var phoneBook = [
+  {Abe: "111-111-1111"},
+   {Bob: "222-222-2222"},
+   {Cam: "333-333-3333"},
+   {Dan: "444-444-4444"},
+   {Ern: "555-555-5555"},
+   {Fry: "111-111-1111"},
+   {Gil: "222-222-2222"},
+   {Hal: "333-333-3333"},
+   {Ike: "444-444-4444"},
+   {Jim: "555-555-5555"},
+   {Kip: "111-111-1111"},
+   {Liv: "222-222-2222"},
+   {Mia: "333-333-3333"},
+   {Nik: "444-444-4444"},
+   {Oli: "555-555-5555"},
+   {Pam: "111-111-1111"},
+   {Qiq: "222-222-2222"},
+   {Rob: "333-333-3333"},
+   {Stu: "444-444-4444"},
+   {Tad: "555-555-5555"},
+   {Uwe: "111-111-1111"},
+   {Val: "222-222-2222"},
+   {Wil: "333-333-3333"},
+   {Xiu: "444-444-4444"},
+   {Yam: "555-555-5555"},
+   {Zed: "111-111-1111"}
+  ];
+
+// Take the phonebook above and use map to return a new phonebook that includes a country-code that matches the rest of the phone number.
+// For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
+
+// Your code here
+
+const newPhonebook = phoneBook.map((phoneBook,num) => {
+  for(var number in phoneBook) 
+  if(phoneBook[number] === "") {
+    console.log(number)
+  }
+  return "1-" + num
+})
+
+// ahhhh, Bruno, do you know what I'm doing wrong?
+
+console.log(newPhonebook);
+
+////////////
+// REDUCE //
+////////////
+
+// BONUS ONLY: Look up docs to read about reduce, which takes an array and distills it into a single value.
+// Write something that takes the above array and returns the product of all the numbers
+// via multiplication
+
+
+var numbers = [1, 56, 2, 4, 1, 99, 3, 5];
+
+// Your code here!
+const reducer = (accumulator, currentValue) => accumulator * currentValue;
+
+console.log(numbers.reduce(reducer));

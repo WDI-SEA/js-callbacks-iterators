@@ -7,5 +7,10 @@
 // > "I like ice cream"
  
 var foods = ["pizza", "tacos", "ice cream", "sushi"];
-
+//colors.forEach(iterate);
 // your code here
+
+function iterate(array)  { 
+  console.log ('I like ' + (array));
+}
+foods.forEach(iterate);

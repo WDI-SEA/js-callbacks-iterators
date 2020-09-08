@@ -31,3 +31,22 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+
+//mapping thourh each value 
+//Mapping through each value(value is in an object) returning it in a new array
+//Mapping through each value(value is in an object) returning it in a new array
+ const newArray = phoneBook.map (function(customer){
+   //object.keys pulls each 'key' value from an object
+     let name = Object.keys(customer);
+     console.log(name)
+     //Using each key value to compare name value in a new variable
+     let phoneNumber = customer[name];
+     console.log(phoneNumber)
+     //Creating a new object
+     let newRecord = {};
+     //Storing iterations chnages into newRecord
+     newRecord[name] = '+' + phoneNumber.charAt(0) + "-" +
+     phoneNumber;
+    return newRecord;
+ });
+ console.log(newArray);

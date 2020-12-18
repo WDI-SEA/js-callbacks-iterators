@@ -31,3 +31,11 @@ var phoneBook = [
 // For example, the 0th element of the new array should be {Abe: "1-111-111-1111"}
 
 //Your code here
+const findNumber=(object)=>{
+  for (let thing in object){
+    object[thing]= object[thing][0]+'-' + object[thing]
+  }
+  return object
+}
+const newArray=phoneBook.map(findNumber)
+console.log(newArray)

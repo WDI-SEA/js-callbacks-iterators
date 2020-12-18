@@ -5,4 +5,10 @@ var mneumonics = ['My Very Excellent Mother Just Sent Me Nine Pizzas', 'Please E
 // ['My', 'Very', 'Excellent', 'Mother', 'Just', 'Sent', 'Me', 'Nine', 'Pizzas']
 
 // Your code here!
-
+var newar = (string)=>{  
+    return string.split(' ')
+}
+  
+var newarray = mneumonics.map(newar)
+  
+console.log(newarray)

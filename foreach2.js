@@ -11,4 +11,7 @@
 ];
 
 // your code here
+foods.forEach((foodObjt)=>{
+  console.log(`${foodObjt.name} is ${foodObjt.level} delicious`)
+})
 

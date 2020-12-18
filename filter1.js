@@ -20,7 +20,21 @@ var people = [
 // (1) Write code that uses the filter function, and the below isCool function to return a list of people who are cool.
 
 var isCool = function(person) {
-	return person.coolnessScore > 20;
+	return {
+		pname = person.name
+
+
+	}
+	person.coolnessScore > 20;
 }
 
 // Your code goes here
+
+var peoplecoolObj = people.filter(isCool)
+
+var names =[]
+peoplecoolObj.forEach((pObj)=>{
+  names.push(pObj.name)
+})
+
+console.log(names)

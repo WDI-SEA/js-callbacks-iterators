@@ -4,7 +4,7 @@
 // > Tacos is mostly delicious
 // > Cottage Cheese is not very delicious
 
- var foods = [
+let foods = [
   {name: "Pizza", level: "very"},
   {name: "Tacos", level: "mostly"},
   {name: "Cottage Cheese", level: "not very"}

@@ -5,10 +5,10 @@
 // > Cottage Cheese is not very delicious
 
 let foods = [
-  {name: "Pizza", level: "very"},
-  {name: "Tacos", level: "mostly"},
-  {name: "Cottage Cheese", level: "not very"}
-];
+    { name: 'Pizza', level: 'very' },
+    { name: 'Tacos', level: 'mostly' },
+    { name: 'Cottage Cheese', level: 'not very' },
+]
 
 // your code here
-foods.forEach(x => console.log(`${x.name} is ${x.level} delicious`))
+foods.forEach((x) => console.log(`${x.name} is ${x.level} delicious`))

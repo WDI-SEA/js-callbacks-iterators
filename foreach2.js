@@ -11,4 +11,4 @@ let foods = [
 ]
 
 // your code here
-foods.forEach((x) => console.log(`${x.name} is ${x.level} delicious`))
+foods.forEach((item) => console.log(`${item.name} is ${item.level} delicious`))

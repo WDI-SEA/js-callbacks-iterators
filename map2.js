@@ -6,3 +6,14 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 // e.g. "36 is larger than 30"
 
 //Your code here
+const squares = numbers.map((number) => number * number)
+
+const thirtyMoreClub = squares.filter((number) => {
+  if(number > 30) {
+    return true
+  } else {
+    return false
+  }
+})
+
+thirtyMoreClub.forEach(console.log)

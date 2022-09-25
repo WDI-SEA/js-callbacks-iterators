@@ -40,3 +40,10 @@ let forecast = [
 // "Monday will have a high of 55F and a low of 53F."
 
 //Your code here
+const newArr = forecast.map((weather) =>{
+    let weatherString = weather.day + " will have a high of " + weather.high + " and a low of " + weather.low + "F"
+  
+    return weatherString
+  })
+  
+  console.log(newArr)

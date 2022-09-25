@@ -5,10 +5,12 @@
 // > Cottage Cheese is not very delicious
 
 let foods = [
-  {name: "Pizza", level: "very"},
-  {name: "Tacos", level: "mostly"},
-  {name: "Cottage Cheese", level: "not very"}
+  { name: "Pizza", level: "very" },
+  { name: "Tacos", level: "mostly" },
+  { name: "Cottage Cheese", level: "not very" }
 ];
 
 // your code here
-
+const rateFood = foods.forEach((food) => {
+  console.log(food.name + " is " + food.level + " delicious")
+})

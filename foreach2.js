@@ -10,5 +10,8 @@ let foods = [
   {name: "Cottage Cheese", level: "not very"}
 ];
 
-// your code here
+const favFood = (food) => {
+  console.log(food.name +" is " +food.level +" delicious" )
+}
+foods.forEach(favFood)
 

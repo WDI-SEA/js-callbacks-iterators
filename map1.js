@@ -39,4 +39,9 @@ let forecast = [
 // Build an array of strings using the forecast objects above with the following pattern:
 // "Monday will have a high of 55F and a low of 53F."
 
-//Your code here
+let dailyForecast = forecast.map((date)=> {
+    return date{day +" will have a high of" + high +" F " + " and a low of " + low + " F "})
+    
+    console.log(date)
+
+

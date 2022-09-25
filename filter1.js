@@ -22,3 +22,6 @@ let people = [
 let isCool = person => person.coolnessScore > 20
 
 // Your code goes here
+
+// Your code goes here
+console.log(people.filter(isCool))

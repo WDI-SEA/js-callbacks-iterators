@@ -11,4 +11,4 @@ let foods = [
 ];
 
 // your code here
-
+foods.forEach((object)=>console.log(object.name+" "+"is "+" "+ object.level +" delicious"))

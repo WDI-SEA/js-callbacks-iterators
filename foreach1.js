@@ -9,3 +9,5 @@
 let foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
+foods.forEach((item)=>console.log("I like"+" "+item))
+ 

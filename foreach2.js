@@ -11,4 +11,7 @@ let foods = [
 ];
 
 // your code here
-
+let deliciousFood = foods.forEach(
+  (food)=>{
+  console.log(food["name"]+" is " +food["level"]+" delicious") 
+})

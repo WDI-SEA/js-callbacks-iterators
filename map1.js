@@ -40,3 +40,7 @@ let forecast = [
 // "Monday will have a high of 55F and a low of 53F."
 
 //Your code here
+listForecast = []
+
+const weather = forecast.map(({ day, high, low}) => (listForecast.push(day + " will have a high of "+high+" and a low of "+low+".") ))                    
+console.log(listForecast)

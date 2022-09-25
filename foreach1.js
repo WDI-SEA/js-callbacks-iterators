@@ -9,3 +9,8 @@
 let foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
+let likeFood = foods.forEach(
+    (food)=>{
+      if(food !== "sushi"){
+       console.log("I like " + food)} 
+  })

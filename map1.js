@@ -40,3 +40,9 @@ let forecast = [
 // "Monday will have a high of 55F and a low of 53F."
 
 //Your code here
+const mapped = forecast.map((element)=>{
+
+  return `${element.day} will have a high of ${element.high}F and and a low of ${element.low}F.`
+})
+
+console.log(mapped[1])

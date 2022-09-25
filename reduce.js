@@ -8,3 +8,8 @@ let numbers = [1, 56, 2, 4, 1, 99, 3, 5];
 // via multiplication
 
 
+const product = numbers.reduce((num, current) => {
+  return num * current
+})
+
+console.log(product)

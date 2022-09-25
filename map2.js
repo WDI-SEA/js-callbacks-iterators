@@ -6,3 +6,17 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 // e.g. "36 is larger than 30"
 
 //Your code here
+
+const sqr = numbers.map((number) => {
+  return (Math.pow(number, 2))
+})
+
+const filteredArr = sqr.filter((number) => {
+  if (number > 30) {
+    console.log(number + " is larger than 30")
+    // return (number)
+  }
+})
+
+filteredArr
+

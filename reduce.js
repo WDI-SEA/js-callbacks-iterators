@@ -8,3 +8,14 @@ let numbers = [1, 56, 2, 4, 1, 99, 3, 5];
 // via multiplication
 
 
+//total is the value to be returned
+//total begins at arr[0]
+const product = numbers.reduce((total, current) => {
+  //return whatever value you want to create
+  //with total and current
+  //whatever you return will be the NEW current
+  return (total * current)
+})
+
+console.log(product)
+//if you want to start with a different total (say, 42), add another argument to .reduce

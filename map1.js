@@ -40,3 +40,12 @@ let forecast = [
 // "Monday will have a high of 55F and a low of 53F."
 
 //Your code here
+
+let newArr = forecast.map((theForecast) => {
+  
+    return (`${theForecast.day} will have a high of ${theForecast.high}F and a low of ${theForecast.low}F.`)
+    
+   
+   })
+   
+   console.log(newArr)

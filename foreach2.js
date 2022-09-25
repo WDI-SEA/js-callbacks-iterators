@@ -12,3 +12,19 @@ let foods = [
 
 // your code here
 
+let foods = [
+  { name: "Pizza", level: "very" },
+  { name: "Tacos", level: "mostly" },
+  { name: "Cottage Cheese", level: "not very" }
+];
+
+
+// for(let i=0; i<foods.length; i++) {
+
+const splitFood = foods.map((food) => {
+  return {
+    first: foods.split(" ")[0],
+    last: foods.split(" ")[1],
+  }
+})
+console.log(splitFood)

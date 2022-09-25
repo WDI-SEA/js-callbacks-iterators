@@ -6,3 +6,11 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 // e.g. "36 is larger than 30"
 
 //Your code here
+
+let largeNums = numbers.filter((number) => {
+    if (Math.pow(number, 2) > 30) {
+        return `${number} is larger than 30`;
+    };
+});
+
+console.log(largeNums);

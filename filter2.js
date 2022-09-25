@@ -6,10 +6,10 @@ let misc = [3, "true", { a: 1, b: 2 }, 7, [1, 2, 3], ['a', 'b', 'c'], "my favori
 // Your code goes here
 
 
-// let stringOnly=misc.filter((str)=>{
-//   if(typeof str === "string")
-//   {
-//     return str
-//   }})
+let stringOnly=misc.filter((str)=>{
+  if(typeof str === "string")
+  {
+    return str
+  }})
 
-// console.log(stringOnly)
+console.log(stringOnly)

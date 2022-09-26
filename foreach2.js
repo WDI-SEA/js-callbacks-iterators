@@ -12,3 +12,6 @@ let foods = [
 
 // your code here
 
+const rating = foods.forEach((elem)=>{
+  console.log(elem.name + " is " + elem.level + " delecious")
+})

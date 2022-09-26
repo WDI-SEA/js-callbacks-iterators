@@ -40,3 +40,8 @@ let forecast = [
 // "Monday will have a high of 55F and a low of 53F."
 
 //Your code here
+
+const tempforecast = forecast.map((cast) => {
+    return (cast.day + " will have a high of " + cast.high + " and a low of " + cast.low)
+  })
+  console.log(tempforecast)

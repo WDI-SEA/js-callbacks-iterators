@@ -9,3 +9,10 @@
 let foods = ["pizza", "tacos", "ice cream", "sushi"];
 
 // your code here
+
+
+let foods = ["pizza", "tacos", "ice cream", "sushi"];
+
+foods.forEach((food) => {
+  console.log("I love " + food)
+})

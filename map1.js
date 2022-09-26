@@ -42,5 +42,6 @@ let forecast = [
 //Your code here
 
 const myforcast = forecast.map((forca) => {
-    console.log(forca.day + " will have a high of " + forca.high + " and a low of " + forca.low)
+    return (forca.day + " will have a high of " + forca.high + " and a low of " + forca.low)
   })
+  console.log(myforcast)

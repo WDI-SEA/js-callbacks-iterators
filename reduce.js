@@ -7,4 +7,6 @@ let numbers = [1, 56, 2, 4, 1, 99, 3, 5];
 // Write something that takes the above array and returns the product of all the numbers
 // via multiplication
 
-
+let prevValue = 1
+numbers.forEach(num => { prevValue = prevValue*num 
+    console.log(prevValue)})

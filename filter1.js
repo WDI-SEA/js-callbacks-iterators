@@ -22,3 +22,9 @@ let people = [
 let isCool = person => person.coolnessScore > 20
 
 // Your code goes here
+const coolPeople = people.filter((person)=>{
+	if(person.coolnessScore>20) return true
+	})
+	
+	console.log(coolPeople)
+	

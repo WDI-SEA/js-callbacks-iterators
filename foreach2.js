@@ -1,3 +1,4 @@
+
 // Use the .forEach iterator to loop over the following array of objects and say how delicious each one is.
 // The output should be
 // > Pizza is very delicious
@@ -12,3 +13,6 @@ let foods = [
 
 // your code here
 
+foods.forEach(function({name, level}){
+      console.log(`${name} is ${level} delicious`)
+})

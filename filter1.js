@@ -22,3 +22,8 @@ let people = [
 let isCool = person => person.coolnessScore > 20
 
 // Your code goes here
+
+
+for (let i = 0; i < foods.length; i++) {
+	console.log("I Like " + foods["3"])
+  }

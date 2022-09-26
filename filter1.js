@@ -22,3 +22,12 @@ let people = [
 let isCool = person => person.coolnessScore > 20
 
 // Your code goes here
+
+const taco = people.filter((person) => {
+  if (person.coolnessScore >= 20) {
+    
+    return true
+  }
+})
+console.log(taco)
+

@@ -39,4 +39,8 @@ let forecast = [
 // Build an array of strings using the forecast objects above with the following pattern:
 // "Monday will have a high of 55F and a low of 53F."
 
-//Your code here
+
+const myforcast = forecast.map((forca) => {
+  return (forca.day + " will have a high of " + forca.high + " and a low of " + forca.low)
+})
+console.log(myforcast)

@@ -6,5 +6,15 @@ let numbers = [1, 56, 2, 4, 1, 99, 3, 5];
 
 // Write something that takes the above array and returns the product of all the numbers
 // via multiplication
+let numbers =[1,58,2,4,99,3,5]
+// let numbers = [2,2,2,2,2]
+let prevValue=1
+numbers.forEach(num => prevValue*num)
+//the two above and below are the same
+let cumulativeProduct = numbers.reduce((prevValue,currValue)=> {
+  return prevValue * currValue
+},1)
+console.log(cumulativeProduct)
+
 
 

@@ -6,14 +6,6 @@ let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 // e.g. "36 is larger than 30"
 
 //Your code here
-const filtered = numbers.filter((num) => {
-
-  let square = num * num
-  if (square > 30) {
-    console.log(`${num} is larger than 30`)
-    return square
-  }
-
-})
-
-console.log(filtered)
+let squared = numbers.map(num => num * num)
+let filtered = squared.filter(num => num > 30)
+filtered.forEach(num => console.log(`${num} is larger than 30`))
